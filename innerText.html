@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Of Inner Html</title>
+    <script>
+        // Function which define Date
+          function MyFunction()
+          {
+            document.getElementById('demo').innerText=Date();
+          }
+    </script>
+</head>
+<body>
+      <h1>Demo of Inner Html</h1>
+      <p id="demo">Message before Event </p>
+      <!-- Button which call function on click-->
+      <button type="button" onclick="MyFunction()">Click</button>
+</body>
+</html>
