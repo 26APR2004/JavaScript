@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArithmeticOperations</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e5eaf5;
+        }
+
+        input{
+            display: block;
+            margin: 10px auto;
+            padding: 8px;
+            border-radius: 11px;
+            width: 220px;
+            font-size: 15px;
+
+        }
+
+        button{
+            margin-top:15px ;
+            padding: 8px 20px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-left: 15px;
+            border-radius: 5px;
+            background-color: #8458B3;
+        }
+
+        .container{
+            background-color: white;
+            padding: 25px 35px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px #d0bdf4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h1>All Arithmentic Operations In JavaScript</h1>
+      <input type="number" id="num_1" placeholder="Enter the First Number">
+      <input type="number" id="num_2" placeholder="Enter the Second Number">
+      <button type="button" onclick="Add()">Addition</button>
+      <p id="Answer"></p>
+</div>
+<script>
+
+
+       function Add()
+        {
+             let x=Number(document.getElementById('num_1').value);
+             let y=Number(document.getElementById('num_2').value);
+             let sum=x+y;
+             document.getElementById('Answer').innerHTML="Addition of two numbers : "+sum;
+        }
+
+
+</script>
+      
+</body>
+</html>
