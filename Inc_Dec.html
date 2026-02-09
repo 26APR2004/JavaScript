@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment and Decrement</title>
+</head>
+<body>
+        <h1>Increment and Decrement in JavaScript</h1>
+        <input type="number" id="num_1" placeholder="Enter the number">
+        <button type="button" onclick="IArithimetic()">Inc</button>
+        <button type="button" onclick="DArithimetic()">Dec</button>
+        <p id="Answer">Answer</p>
+        <script>
+            function IArithimetic() {
+            let input = document.getElementById('num_1');
+            let x=Number(input.value)
+            x+=1;
+            input.value=x;
+            document.getElementById('Answer').innerHTML="Result : "+x;
+            }
+
+           function DArithimetic() {
+            let input= document.getElementById('num_1');
+            let x = Number(input.value);
+            x-=1;
+            input.value=x;
+            document.getElementById('Answer').innerHTML="Result : "+x;
+            }
+        </script>
+</body>
+</html>
