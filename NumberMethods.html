@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InBuilt_Methods</title>
+    <style>
+        body{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+       <h1>In Built Methods Of Numbers In JavaScript</h1>
+       <input type="number"id="input" placeholder="Enter Number">
+       <button  type="button" onclick="Expo()">2Power</button>
+       <p id="demo"></p>
+       <script>
+        function Expo()
+        {
+             let number=document.getElementById('input').value;
+             let num=Number(number);
+             document.getElementById('demo').innerHTML=`<h3>${num.toExponential(2)}</h3>`;
+        }
+                
+       </script>
+</body>
+</html>
