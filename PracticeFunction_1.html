@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloWorld</title>
+    <style>
+        body{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+         <h1>Hello Worls JavaScript Function</h1>
+         <button type="button" onclick="mul(3,3)">Mul</button>
+         <p id="demo"></p>
+         <p id="demo_1"></p>
+         <p id="demo_2"></p>
+         <script>
+            function Message(){
+                  return "Hello World";
+             }
+              let message=Message();
+             document.getElementById('demo').innerHTML=message;
+
+             function mul(a,b)
+             {
+                   
+                    document.getElementById('demo_1').innerHTML="<h3>"+a*b+"</h3>";
+             }
+             
+             function Type()
+             {
+                let carName = "Volve";
+                let text= "Type:"+typeof carName;
+                document.getElementById('demo_2').innerHTML="<h3>"+text+"</h3>";
+             }
+             Type();
+    
+         </script>
+</body>
+</html>
