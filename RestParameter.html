@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Reset Parameter</title>
+    <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                align-items: center;
+                justify-content: center;
+            }
+    </style>
+</head>
+<body>
+        <h1>Reset Parameter in javaScript</h1>
+        <p id="demo"></p>
+        <script>
+            // Function to find min Number
+               function myFunction(...args)
+               {
+                let minNumber=Infinity;
+                for(let i=0;i<args.length;i++)
+                  {
+                    if(minNumber>args[i])
+                       minNumber=args[i];
+                  }
+                   return minNumber; 
+               }
+
+               document.getElementById('demo').innerHTML="<h3>"+myFunction(10,20,3,45,12,67,78,2,12,67,98)+"</h3>"
+        </script>
+</body>
+</html>

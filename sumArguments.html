@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of Arguments</title>
+    <style>
+             body
+             {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                justify-content: center;
+
+             }
+    </style>
+</head>
+<body>
+       <h1>Sum of Arguments by using object</h1>
+       <p id="demo"></p>
+       <script>
+         function SumOfArgument(){
+               let sum=0;
+               for(let i=0;i<arguments.length;i++)
+               {
+                     sum+=arguments[i];
+               }
+               return sum;
+            }
+          document.getElementById('demo').innerHTML= "<h2>"+SumOfArgument(2,3,4)+"<\h2>";
+
+       </script>
+</body>
+</html>

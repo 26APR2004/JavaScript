@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arguments Object</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+        <h1> Argument Object in JavaScript</h1>
+        <p id="demo"></p>
+
+        <script>
+                function Max()
+                {
+                    let maxNumber=-Infinity;
+                    for(let i=0;i<arguments.length;i++)
+                {
+                   if(arguments[i]>maxNumber)
+                        maxNumber=arguments[i];
+                      
+                }
+                return maxNumber;
+               
+                }
+
+                let largNumber=Max(1,2,5,2,78,89,23);
+                document.getElementById('demo').innerHTML=largNumber;
+        </script>
+</body>
+</html>
